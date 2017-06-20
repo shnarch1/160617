@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popups Exercise</title>
+	
+</head>
+<style>
+	body{
+		margin: 0;
+	}
+	#popup-container{
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#popup{
+		position: relative;
+		background-color: white;
+		min-width: 20%;
+		max-width: 50%;
+		border-radius: 20px;
+	}
+	
+	#del_btn{
+		background-color: transparent;
+		position: absolute;
+		right: 0;
+		border: none;
+		font-size: 25px;
+	}
+
+	#del_btn:focus{
+		outline: none;
+		border:none;
+	}
+
+	#popup-content{
+		display: flex;
+		flex-direction: column;
+		margin: 50px;
+	}
+
+	#popup-content form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+</style>
+<body>
+<!-- 	<div class="popup-overlay">
+		<div id="popup">
+		</div>
+	</div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
